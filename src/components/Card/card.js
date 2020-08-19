@@ -7,7 +7,7 @@ const Card = props => {
     <a href="/">
       <section className={cardStyles.container}>
         <div></div>
-        <img src={props.imageLink}></img>
+        <img src={props.imageLink} alt="card"></img>
 
         <h3>{props.title}</h3>
       </section>

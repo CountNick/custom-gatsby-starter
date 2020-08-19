@@ -9,7 +9,7 @@ import React, {useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import SEO from "./seo"
 import Navigation from "./Navigation/navigation"
 import Menu from "./Menu/menu"
 
@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SEO title={data.site.siteMetadata.title} />
       <Navigation setOpen={setOpen} setOpenState={setOpenState}/>
       <Menu setOpen={setOpen} setOpenState={setOpenState}/>
       {/* <Header siteTitle={data.site.siteMetadata.title} />

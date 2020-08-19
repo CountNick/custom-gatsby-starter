@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import Link from "gatsby-link"
+import React from "react"
 import navigationStyles from "./navigation.module.css"
 import Burger from "../Burger/burger"
 
