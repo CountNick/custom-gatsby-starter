@@ -1,17 +1,17 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    padding: .5rem 2rem;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 50%;
-    scroll-snap-align: start;
-    overflow-x: scroll;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  padding: 0.5rem 2rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+  scroll-snap-align: start;
+  overflow-x: scroll;
+  width: 100%;
 }
 
-.container li{
-    scroll-snap-align: start;
-    padding-right: 2rem;
+.container li {
+  scroll-snap-align: start;
+  padding-right: 2rem;
 }

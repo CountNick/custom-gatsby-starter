@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
-.container:link{
-    text-decoration: none;
+.container:link {
+  text-decoration: none;
 }
 
-.container strong{
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+.container strong {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
-.container span{
-    color: rgb(162, 162, 162);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+.container span {
+  color: rgb(162, 162, 162);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
