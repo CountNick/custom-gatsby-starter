@@ -2,6 +2,8 @@
 
 ## [Checkout the live demo here!](https://epic-perlman-aad659.netlify.app/)
 
+**Please not this is just a mobile menu for now**
+
 
 ## Installation
 
