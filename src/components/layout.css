@@ -20,7 +20,7 @@ body {
 
 /* Style to rotate icon when state is active */
 .rotate {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .open div:nth-of-type(1){
