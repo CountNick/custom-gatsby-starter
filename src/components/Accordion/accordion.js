@@ -19,7 +19,7 @@ const Accordion = (props) => {
     return (
         <section className={accordionStyle.container}>
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-                <p className="accordion__title">{props.title}</p>
+                <p>{props.title}</p>
                 <Chevron className={`icon ${setRotate}`} width={10} fill={"rgb(162, 162, 162)"} />
             </button>
             

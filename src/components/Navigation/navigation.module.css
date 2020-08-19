@@ -45,3 +45,8 @@ button{
     height: 6.4vw;
     width: 6.4vw;
 }
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
