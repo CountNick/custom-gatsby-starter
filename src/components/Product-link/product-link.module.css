@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.container:link{
+    text-decoration: none;
+}
+
+.container strong{
+    color: black;
+    text-transform: uppercase;
+}
+
+.container span{
+    color: rgb(241, 241, 241);
+}
