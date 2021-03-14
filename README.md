@@ -1,4 +1,4 @@
-# Mobile menu made with React and Gatsby
+# A custom gatsby starter project with hamburger menu and css modules
 
 ## [Checkout the live demo here!](https://epic-perlman-aad659.netlify.app/)
 

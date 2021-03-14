@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.container button {
+.container button, .container a {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
@@ -22,13 +22,14 @@
   width: 100%;
 }
 
-.container button > p {
+.container button > p, .container a {
   /* padding-left: 10%; */
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1.6em;
   text-transform: uppercase;
   color: black;
+  text-decoration: none;
 }
 
 .container button > svg {

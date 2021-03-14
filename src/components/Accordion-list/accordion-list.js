@@ -1,17 +1,17 @@
 import React from "react"
 import Accordion from "../Accordion/accordion"
 import ProductLink from "../Product-link/product-link"
-
-import accordionListStyles from "./accordion-list.module.css"
+import { Router } from "@reach/router"
 
 const categories = [
   {
     id: 0,
-    title: "Daily",
+    title: "menu item 1",
     products: [
       {
         name: "Tired or painful legs",
         amount: 25,
+        url: 'kl'
       },
       {
         name: "Sitting profession",
@@ -29,7 +29,7 @@ const categories = [
   },
   {
     id: 1,
-    title: "Sports",
+    title: "menu item 2",
     products: [
       {
         name: "Running",
@@ -71,7 +71,7 @@ const categories = [
   },
   {
     id: 2,
-    title: "Travel",
+    title: "menu item 3",
     products: [
       {
         name: "Travel socks",
@@ -81,7 +81,7 @@ const categories = [
   },
   {
     id: 3,
-    title: "Medical",
+    title: "menu item 4",
     products: [
       {
         name: "Thrombosis",
@@ -105,26 +105,39 @@ const categories = [
       },
     ],
   },
+  {
+    id: 4,
+    title: "menu item 5",
+  },
 ]
 
 const AccordionList = () => {
+
   return (
-    <ul className={accordionListStyles.container}>
-      {categories.map(category => (
+      categories.map(category => (
         <li key={category.id}>
-          <Accordion
-            title={category.title}
-            content={category.products.map(product => (
-              <ProductLink
-                key={product.name + 1}
-                name={product.name}
-                amount={product.amount}
-              />
-            ))}
-          />
+          {category.products ? (
+            <Accordion
+              title={category.title}
+              content={category.products.map(product => (
+                <ProductLink
+                  key={product.name + 1}
+                  name={product.name}
+                  amount={product.amount}
+                  url = {product.url}
+                />
+              ))}
+            />
+          ) : (
+            <Accordion
+            title = {category.title}
+            >
+
+            </Accordion>
+          )}
+
         </li>
-      ))}
-    </ul>
+      ))
   )
 }
 

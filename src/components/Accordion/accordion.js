@@ -18,24 +18,38 @@ const Accordion = props => {
     )
   }
 
+  
+
   return (
     <section className={accordionStyle.container}>
-      <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-        <p>{props.title}</p>
-        <Chevron
-          className={`icon ${setRotate}`}
-          width={10}
-          fill={"rgb(162, 162, 162)"}
-        />
-      </button>
 
-      <div
-        ref={content}
-        style={{ maxHeight: `${setHeight}` }}
-        className="content"
-      >
-        <ul className={accordionStyle.productList}>{props.content}</ul>
-      </div>
+    {props.content ? (
+      <React.Fragment>
+            <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
+            <p>{props.title}</p>
+            <Chevron
+              className={`icon ${setRotate}`}
+              width={10}
+              fill={"rgb(162, 162, 162)"}
+            />
+          </button>
+    
+          <div
+            ref={content}
+            style={{ maxHeight: `${setHeight}` }}
+            className="content"
+          >
+            <ul className={accordionStyle.productList}>{props.content}</ul>
+          </div>
+      </React.Fragment>
+    ) : (
+
+      <a href={props.title}>{props.title}</a>
+
+
+
+    )}      
+
     </section>
   )
 }
