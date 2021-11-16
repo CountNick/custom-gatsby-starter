@@ -4,10 +4,29 @@
     width: 100%;
     list-style-type: none;
     padding: 0;
-  }
+    align-items: center;
+}
   
-  .container > li {
+.container > li {
     margin: -0.1em;
     width: 100%;
-  }
+}
+
+.container > li:first-of-type {
+    display: none;
+}
+
   
+
+@media screen and (min-width: 750px) {
+  .container {
+      flex-direction: row;
+  }
+
+  .container > li:first-of-type {
+    display: block;
+    display: flex;
+    justify-content: center;
+    }
+
+}

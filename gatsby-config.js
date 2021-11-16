@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `STOX Energy Socks with high-tech compression`,
-    description: `STOX Energy Socks`,
+    title: `Website title`,
+    description: `Website Description`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -9,10 +9,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

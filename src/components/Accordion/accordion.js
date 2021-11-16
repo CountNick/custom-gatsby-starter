@@ -44,7 +44,9 @@ const Accordion = props => {
       </React.Fragment>
     ) : (
 
-      <a href={props.title}>{props.title}</a>
+      <button className={'accordion'}> 
+        <a href={props.title}>{props.title}</a>
+      </button>
 
 
 

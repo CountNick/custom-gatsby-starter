@@ -7,6 +7,7 @@ const AccordionListContainer = () => {
 
     return (
       <ul className={accordionListContainerStyles.container}>
+          <li className={"logo"}>logo</li>
           <AccordionList></AccordionList>
       </ul>
     )
