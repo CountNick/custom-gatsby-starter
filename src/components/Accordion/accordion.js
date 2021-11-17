@@ -25,7 +25,7 @@ const Accordion = props => {
 
     {props.content ? (
       <React.Fragment>
-            <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
+            <button className={`${accordionStyle.mobile__accordion} accordion ${setActive}`} onClick={toggleAccordion}>
             <p>{props.title}</p>
             <Chevron
               className={`icon ${setRotate}`}
@@ -41,6 +41,12 @@ const Accordion = props => {
           >
             <ul className={accordionStyle.productList}>{props.content}</ul>
           </div>
+
+          <button className={accordionStyle.desktop__accordion}><p>{props.title}</p></button>
+          <section className={accordionStyle.desktop__accordion_content}>
+            <ul>{props.content}</ul>
+          </section>
+
       </React.Fragment>
     ) : (
 

@@ -1,7 +1,6 @@
 import React from "react"
 import Accordion from "../Accordion/accordion"
 import ProductLink from "../Product-link/product-link"
-import { Router } from "@reach/router"
 
 const categories = [
   {
@@ -11,7 +10,7 @@ const categories = [
       {
         name: "Tired or painful legs",
         amount: 25,
-        url: 'kl'
+        url: "kl",
       },
       {
         name: "Sitting profession",
@@ -112,33 +111,27 @@ const categories = [
 ]
 
 const AccordionList = () => {
-
-  return (
-      categories.map(category => (
-        <li key={category.id}>
-          {category.products ? (
-            <Accordion
-              title={category.title}
-              content={category.products.map(product => (
-                <ProductLink
-                  key={product.name + 1}
-                  name={product.name}
-                  amount={product.amount}
-                  url = {product.url}
-                />
-              ))}
-            />
-          ) : (
-            <Accordion
-            title = {category.title}
-            >
-
-            </Accordion>
-          )}
-
-        </li>
-      ))
-  )
+  return categories.map(category => (
+    <li key={category.id}>
+      {category.products ? (
+        <React.Fragment>
+          <Accordion
+            title={category.title}
+            content={category.products.map(product => (
+              <ProductLink
+                key={product.name + 1}
+                name={product.name}
+                amount={product.amount}
+                url={product.url}
+              />
+            ))}
+          />
+        </React.Fragment>
+      ) : (
+        <Accordion title={category.title}></Accordion>
+      )}
+    </li>
+  ))
 }
 
 export default AccordionList
